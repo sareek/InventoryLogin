@@ -12,7 +12,7 @@ Now  I'm gonna give you a basic idea about the design of database you can follow
 yourself, once you are done with that you can download the InventoryLogin save the file inside your projectsfile and open
 it with JRE u r using, netbeans in this case.
 
-items                                                                                                          
+## items                                                                                                          
 5 columns     type 						
 1.index_no    int 							
 2.item        string						
@@ -21,7 +21,7 @@ items
 5.faculty     string						
 								
 
-purchased_item  
+## purchased_item  
 6 columns       type
 1.index_no	int
 2.item		string	
