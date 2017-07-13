@@ -12,25 +12,12 @@ Now  I'm gonna give you a basic idea about the design of database you can follow
 yourself, once you are done with that you can download the InventoryLogin save the file inside your projectsfile and open
 it with JRE u r using, netbeans in this case.
 
-## items                                                                                                          
-5 columns     type 						
-1.index_no    int 							
-2.item        string						
-3.price       float														
-4.quantity    int						
-5.faculty     string						
-								
+![gitko](https://user-images.githubusercontent.com/16555225/28185084-b86e7b72-6835-11e7-9052-5aa5419f87c4.png)
 
-## purchased_item  
-6 columns       type
-1.index_no	int
-2.item		string	
-3.quantity	int
-4.unit_price	float
-5.total		float
-6.datetime      DATETIME
 
-Note: you can assign suitable size to these yourself. index_no is primary auto increment and not null.
+
+
+Note: you can assign suitable size to these yourself and also index_no is primary,auto increment and not null for both tables mentioned above.
 
 THANK YOU HOPE THIS WILL BE HELPFUL.
 If you need any help mail me at sareek007@gmail.com
