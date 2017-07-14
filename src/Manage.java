@@ -714,7 +714,71 @@ public class Manage extends javax.swing.JFrame {
          se.printStackTrace();
       }//end finally try
    }//end try
+     int originalQty = 0;
+     int newqty = Integer.parseInt(jTextField16.getText());
+     conn=MySqlConnect.ConnectDB();
+     String sql2="select quantity from items where item =?";
       
+try {
+      
+             pst=conn.prepareStatement(sql2);
+             
+        
+             pst.setString(1, jTextField13.getText());
+              
+             ResultSet rs = pst.executeQuery();
+           
+             while(rs.next()){
+                originalQty=rs.getInt("quantity");
+
+                }
+              //for testing whether code flow is goin on or not //JOptionPane.showMessageDialog(null," Successfully!");
+
+    }
+     catch (SQLException ex) {
+
+    }
+    //System.out.println(originalQty);
+    int totqty=originalQty+newqty;
+    conn=MySqlConnect.ConnectDB();
+     String sql3="update items set quantity="+totqty+" where item =?";
+     try {
+      
+             pst=conn.prepareStatement(sql3);
+             
+        
+             pst.setString(1, jTextField13.getText());
+              
+              int n1=pst.executeUpdate();
+      //if(n1>0)
+      //{
+      //JOptionPane.showMessageDialog(null,"Updated Successfully!");
+      //}
+
+         } catch (SQLException ex) {
+             Logger.getLogger(Manage.class.getName()).log(Level.SEVERE, null, ex);
+         }
+          
+     conn=MySqlConnect.ConnectDB();
+     String sql4="update items set price=? where item =?";
+     try {
+      
+             pst=conn.prepareStatement(sql4);
+             
+        
+             pst.setString(1, jTextField14.getText());
+             pst.setString(2, jTextField13.getText());
+              
+              int n1=pst.executeUpdate();
+      if(n1>0)
+      {
+      JOptionPane.showMessageDialog(null,"Updated Successfully!");
+      }
+
+         } catch (SQLException ex) {
+             Logger.getLogger(Manage.class.getName()).log(Level.SEVERE, null, ex);
+         }
+          
         
     }//GEN-LAST:event_jButton7ActionPerformed
 
