@@ -1,5 +1,5 @@
 # InventoryLogin
-Its a simple inventory system for record keeping of items purchased and available in different departments of a college. It can be used for inserting items, updating them also for searching items by name or faculty and to keep records of items purchased. It also has some other features you can check them out.
+Its a simple inventory system for record keeping of items purchased and available in different departments of a college. It can be used for inserting items, updating them also for searching items by name or faculty and to keep records of items purchased.When additional items are purchased, clicking on purchase button records that information with time and date of purchase and one can view it by clicking on purchase info button. Also on every purchase final number of quantity and latest unit price of the item purchased is updated in the item table and can be viewed by clicking on display button. It also has some other features you can check them out.
 
 
 
