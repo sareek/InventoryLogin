@@ -19,5 +19,6 @@ it with JRE u r using, netbeans in this case.
 
 Note: you can assign suitable size to these yourself and also index_no is primary,auto increment and not null for both tables mentioned above.
 
-THANK YOU HOPE THIS WILL BE HELPFUL.
+THANK YOU GUYS
 If you need any help mail me at sareek007@gmail.com
+
